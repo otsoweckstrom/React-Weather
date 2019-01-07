@@ -1,11 +1,17 @@
-import React from "react";
-import Titles from "./components/Titles";
-import Form from "./components/Form";
-import Weather from "./components/Weather";
-
+import React, { Component } from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Navbar from "./components/CustomNavbar";
+import LUT from "./components/lut";
+import Turku from "./components/Turku";
+import Espoo from "./components/Espoo";
+import Oulu from "./components/Oulu";
+import Tampere from "./components/Tampere";
+import Vaasa from "./components/Vaasa";
 const API_KEY = "097b1d41353753ec41aa4a754b4a2b32";
 
-class App extends React.Component {
+class App extends Component {
   state = {
     temperature: undefined,
     city: undefined,
@@ -14,11 +20,10 @@ class App extends React.Component {
     description: undefined,
     error: undefined
   };
-
   getWeather = async e => {
     e.preventDefault();
-    const city = e.target.elements.city.value;
-    const country = e.target.elements.country.value;
+    const city = "lappeenranta";
+    const country = "fi";
     const api_call = await fetch(
       `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${API_KEY}`
     );
@@ -43,21 +48,22 @@ class App extends React.Component {
       });
     }
   };
-
   render() {
     return (
-      <div>
-        <Titles />
-        <Form getWeather={this.getWeather} />
-        <Weather
-          temperature={this.state.temperature}
-          city={this.state.city}
-          country={this.state.country}
-          description={this.state.description}
-          error={this.state.error}
-        />
-      </div>
+      <Router>
+        <div>
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Route path="/Turku" component={Turku} />
+          <Route path="/lut" component={LUT} />
+          <Route path="/Espoo" component={Espoo} />
+          <Route path="/Oulu" component={Oulu} />
+          <Route path="/Vaasa" component={Vaasa} />
+          <Route path="/Tampere" component={Tampere} />
+        </div>
+      </Router>
     );
   }
 }
+
 export default App;
