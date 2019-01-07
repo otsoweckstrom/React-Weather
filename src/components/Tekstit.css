@@ -1,0 +1,29 @@
+.Tekstit {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: white;
+  font-size: 125px;
+}
+
+.Sää {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+}
+
+.Info {
+  height: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.Transp {
+  color: transparent;
+  text-align: center;
+  font-size: 1px;
+}
