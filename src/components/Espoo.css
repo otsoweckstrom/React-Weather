@@ -1,0 +1,7 @@
+.Espoo {
+  background-image: url("assets/Espoo_kuva.png");
+  height: 89vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

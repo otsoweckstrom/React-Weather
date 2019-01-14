@@ -1,0 +1,8 @@
+.Oulu {
+  background-image: url("assets/Oulu_kuva.png");
+  height: 89vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,51 @@
+.Tekstit {
+  height: 180px;
+  line-height: 180px;
+  text-align: center;
+  color: white;
+  font-size: 125px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.Sää {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  margin-bottom: 70px;
+}
+.SääB {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: -81px;
+}
+.Karuselli {
+  bottom: -20px;
+}
+
+.Info {
+  height: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+.Päivä {
+  height: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: -20px;
+  margin-top: 5px;
+}
+.Transp {
+  color: transparent;
+  text-align: center;
+  font-size: 1px;
+  bottom: 40px;
+}
