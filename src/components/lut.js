@@ -58,7 +58,7 @@ class LUT extends Component {
   };
   render() {
     return (
-      <body className="LUT" onMouseMove={this.getWeather}>
+      <body className="LUT" onMouseDown={this.getWeather}>
         <h1 className="Transp">l</h1>
         <h1 className="Tekstit">Lappeenranta</h1>
         <Carousel pauseOnHover="true" className="Karuselli">

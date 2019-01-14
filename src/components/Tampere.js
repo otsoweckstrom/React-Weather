@@ -58,7 +58,7 @@ class Tampere extends Component {
   };
   render() {
     return (
-      <body className="Tampere" onMouseMove={this.getWeather}>
+      <body className="Tampere" onMouseDown={this.getWeather}>
         <h1 className="Transp">l</h1>
         <h1 className="Tekstit">Tampere</h1>
         <Carousel pauseOnHover="true" className="Karuselli">

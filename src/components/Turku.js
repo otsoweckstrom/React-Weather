@@ -58,7 +58,7 @@ class Turku extends Component {
   };
   render() {
     return (
-      <body className="Turku" onMouseMove={this.getWeather}>
+      <body className="Turku" onMouseDown={this.getWeather}>
         <h1 className="Transp">l</h1>
         <h1 className="Tekstit">Turku</h1>
         <Carousel pauseOnHover="true" className="Karuselli">

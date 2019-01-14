@@ -58,7 +58,7 @@ class Vaasa extends Component {
   };
   render() {
     return (
-      <body className="Vaasa" onMouseMove={this.getWeather}>
+      <body className="Vaasa" onMouseDown={this.getWeather}>
         <h1 className="Transp">l</h1>
         <h1 className="Tekstit">Vaasa</h1>
         <Carousel pauseOnHover="true" className="Karuselli">

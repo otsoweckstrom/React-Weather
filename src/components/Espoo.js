@@ -59,7 +59,7 @@ class Espoo extends Component {
   };
   render() {
     return (
-      <body className="Espoo" onMouseMove={this.getWeather}>
+      <body className="Espoo" onMouseDown={this.getWeather}>
         <h1 className="Transp">l</h1>
         <h1 className="Tekstit">Espoo</h1>
         <Carousel pauseOnHover="true" className="Karuselli">

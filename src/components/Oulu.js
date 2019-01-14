@@ -65,7 +65,7 @@ class Oulu extends Component {
   };
   render() {
     return (
-      <body className="Oulu" onMouseMove={this.getWeather}>
+      <body className="Oulu" onMouseDown={this.getWeather}>
         <h1 className="Transp">l</h1>
         <h1 className="Tekstit">Oulu</h1>
         <Carousel pauseOnHover="true" className="Karuselli">
